@@ -287,6 +287,44 @@
             </div>
         </div>
     </section>
+
+    <!-- Contact and Map -->
+    <section class="p-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md">
+                    <h2 class="text-center mb-4">
+                        Contact Info
+                    </h2>
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item"><span class="fw-bold">Main Location:</span> 50 Sarsuna, Green Park, Kolkata</li>
+                        <li class="list-group-item"><span class="fw-bold">Enrollment Phone:</span> 033-2435-3456</li>
+                        <li class="list-group-item"><span class="fw-bold">Student Phone:</span> +919844244422</li>
+                        <li class="list-group-item"><span class="fw-bold">Enrollment Email:</span> tatom@hacktheblog.com</li>
+                        <li class="list-group-item"><span class="fw-bold">Student Email:</span> student@hacktheblog.com</li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+    <script>
+        let map;
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById("map"), {
+                center: { lat: 22.5726, lng: 88.3639 },
+                zoom: 8,
+            });
+        }
+    </script>
 </body>
 </html>

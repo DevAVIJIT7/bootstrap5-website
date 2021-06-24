@@ -3,6 +3,9 @@ body::before {
     content: '';
     height: 60px;
 }
+#map {
+    height: 100%;
+}
 @media (min-width: 768px){
     .news-input {
         width: 50%;
